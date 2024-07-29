@@ -41,35 +41,12 @@ public class Function {
 	
 	public static boolean confrontoValori(int[] a) {
 		boolean verifica=false;
-		//int count=0;
-		
-		/*for(int i=0; i<a.length; i++) {
-			for(int j=1; j<a.length; j++) {
-				
-				System.out.print("Valori di i: " + a[i] + " " + "indice di i: " + i);
-				System.out.println("\n");
-				System.out.println("Valori di j: " + a[j]+ " " + "indice di j: " + j);
-				if(a[i]==a[j] && i-j==1) {
-					count++;
-					j++;
-					
-				}
-				
-			}
-			
-		}*/
 		for(int i=0; i<a.length-2; i++) {
 			if(a[i]==a[i+1] && a[i+1]==a[i+2]) {
 				verifica= true;
 			}
 			
 		}
-		/*System.out.println("Valore count: " + count);
-		if(count==2) {
-			return false;
-		}else {
-			return true;
-		}*/
 		return verifica;
 		
 	}
